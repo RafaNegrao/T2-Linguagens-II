@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/beanstalk.css">
     <link rel="stylesheet" href="assets/css/gifplayer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/jpg" href="assets/img/new_york.jpg">
 </head>
 
@@ -53,7 +53,7 @@
                                 <div class="form-group"><label>Seu Nome</label><input class="form-control" type="text" name="name" placeholder="Nome"></div>
                                 <div class="form-group"><label>Atividades</label></div>
                                 <select class="form-control">
-                                    <option value=""> Atividades</option>
+                                    <option value="" data-placeholder> Atividades</option>
                                     <option value="1">Escaladas</option>
                                     <option value="2">Cavernas</option>
                                     <option value="3">Snowboarding</option>
@@ -346,7 +346,11 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/easydropdown.js"></script>    
     <script>
-        easydropdown.all();
+        easydropdown.all({
+                behavior: {
+                    showPlaceholderWhenOpen: true
+                }
+            });
     </script>
     <script src="assets/js/jquery.gifplayer.js"></script>
     <script>

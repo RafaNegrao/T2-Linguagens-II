@@ -42,12 +42,24 @@ body {
 }
 
 .form-group {
-  color:black;
+  color:gray;
   margin-bottom: 0%;
 }
 
 .form-control {
   margin-bottom: 3%
+}
+
+.edd-root{
+  width: 100%;
+}
+
+.edd-head{
+  border: 1px solid rgb(199, 199, 199);
+}
+
+.edd-gradient-bottom{
+  height: 0px;
 }
 
 .gifplayer{
